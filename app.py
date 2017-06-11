@@ -61,9 +61,9 @@ def response_msg(savaal):
     if savaal.startswith("cess mania") :
 	    if len(savaal.split(",")) == 4:
 	        text_list= savaal.split(",")
-	        student_name= text_list[1].split()[1]
-	        task=text_list[2].split()[1]
-	        task_answer=text_list[3].split()[1]
+	        student_name= text_list[1]
+	        task=text_list[2]
+	        task_answer=text_list[3]
             flag =1
             output = "Wassup! I am Cess-istant /n Welcome to CESS Mania /n Your answer is successfully submitted/n Points will be rewared accorind to correctness of your answer/n Keep playing in CESS MANIA"
         
