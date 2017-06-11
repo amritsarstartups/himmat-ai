@@ -48,7 +48,7 @@ def webhook():
 #Main task is to genrate responses for the CESS MANIA 
 # 3 main resonses based on the query
 # 1) Answer to the event: Particular format needed ->
-# format :  Cess Mania ,Name abc , Task XYZ, Answer ans
+# format :  Cess Mania , Name , Task , Answer
 # response: "Wassup! I am Cess-istant" /n Welcome to CESS Mania /n Your answer is successfully submitted/n Points will be rewared accorind to correctness of your answer/ Keep playing in CESS MANIA
 
 # 2)  Answer to event but wrong format : "Wassup! I am Cess-istant"/n Oops! look like you entered the answer in wrong format! /n "Format details" /n Please send your response again in given format/n Keep playing in CESS MANIA 
@@ -56,19 +56,24 @@ def webhook():
 
 
 def response_msg(savaal):
+    flag =0
     savaal=savaal.lower()
     if savaal.startswith("cess mania") :
-	    if(savaal.split(",")[1].split()[0] == "name" and savaal.split(",")[2].split()[0] == "task" and savaal.split(",")[3].split()[0] == "answer"):
+	    if len(savaal.split(",") == 4):
 	        text_list= savaal.split(",")
 	        student_name= text_list[1].split()[1]
 	        task=text_list[2].split()[1]
 	        task_answer=text_list[3].split()[1]
-	        output = "Wassup! I am Cess-istant /n Welcome to CESS Mania /n Your answer is successfully submitted/n Points will be rewared accorind to correctness of your answer/n Keep playing in CESS MANIA"
-        #else :
+            flag =1
+            output = "Wassup! I am Cess-istant /n Welcome to CESS Mania /n Your answer is successfully submitted/n Points will be rewared accorind to correctness of your answer/n Keep playing in CESS MANIA"
+        
 		      
-            #output = "Wassup! I am Cess-istant/n Oops! look like you entered the answer in wrong format! /n Format -> CESS MANIA , Name abc, Task XYZ , Answer your_answer /n Please send your response again in given format/n Keep playing in CESS MANIA"		
+            	
     else:
         output =  "Wassup! I am Cess-istant /n Thankyou for connecting with CESS /n We will get back to you soonest! /n Till then go check out CESS MANIA, its awesome"
+		
+    if flag == 0:
+        return ("Wassup! I am Cess-istant/n Oops! look like you entered the answer in wrong format! /n Format -> CESS MANIA , Name abc, Task XYZ , Answer your_answer /n Please send your response again in given format/n Keep playing in CESS MANIA")		
     return output	
 		
  
