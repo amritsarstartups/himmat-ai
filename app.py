@@ -57,7 +57,7 @@ def webhook():
 
 def response_msg(savaal):
     savaal=savaal.lower()
-    if savaal.startswith("CESS MANIA") :
+    if savaal.startswith("cess mania") :
 	    if(savaal.split(",")[1].split()[0] == "name" and savaal.split(",")[2].split()[0] == "task" and savaal.split(",")[3].split()[0] == "answer"):
 	        text_list= savaal.split(",")
 	        student_name= text_list[1].split()[1]
