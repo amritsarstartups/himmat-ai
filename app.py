@@ -59,7 +59,7 @@ def response_msg(savaal):
     flag =0
     savaal=savaal.lower()
     if savaal.startswith("cess mania") :
-	    if len(savaal.split(",") == 4):
+	    if len(savaal.split(",")) == 4):
 	        text_list= savaal.split(",")
 	        student_name= text_list[1].split()[1]
 	        task=text_list[2].split()[1]
