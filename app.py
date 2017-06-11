@@ -64,7 +64,7 @@ def response_msg(savaal):
         student_name= text_list[1]
         task=text_list[2]
         task_answer=text_list[3]        
-        output = "Wassup! I am Cess-istant. Welcome to CESS Mania. Your answer is successfully submitted. Points will be rewared accorindg to correctness of your answer. Keep playing in CESS MANIA"
+        output = "Wassup! I am Cess-istant. Welcome to CESS Mania. Your answer is successfully submitted. Points will be rewarded according to correctness of your answer. Keep playing in CESS MANIA"
     
     elif (savaal.startswith("cess mania") or len(savaal.split(",")) == 4) :
         output = "Wassup! I am Cess-istant. Oops! looks like you entered the answer in wrong format! Format -> Cess Mania , Name , Task , Answer. Please send your response again in given format. Keep playing in CESS MANIA"	
@@ -72,7 +72,7 @@ def response_msg(savaal):
 		      
             	
     else :
-        output =  "Wassup! I am Cess-istant. Thankyou for connecting with CESS. We will get back to you soonest! Till then go check out CESS MANIA, its awesome"
+        output =  "Wassup! I am Cess-istant. Thankyou for connecting with CESS. We will get back to you soonest! (In case you submitted answer for CESS MANIA TASK, please send the answer in given format). Till then go check out CESS MANIA, its awesome. CESS MANIA FAQs : Q) How to register for CESS MANIA A)There is no registration for CESS MANIA, just like and share CESS PAGE and you are good to go"
 		
     		
     return output	
