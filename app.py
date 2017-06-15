@@ -124,7 +124,7 @@ def location_data():
         final_data["data"].append(d)
     return final_data
 
-@app.route('/api/sbcon/', ['GET'])
+@app.route('/api/sbcon/', methods=['GET'])
 def data():
     return jsonify(location_data())
    
