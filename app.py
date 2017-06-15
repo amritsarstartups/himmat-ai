@@ -95,10 +95,10 @@ base_url="https://maps.googleapis.com/maps/api/place/search/json?location="
 
 def location_data(lat,lng,type):
     
-	loaction="lat"+","+"lng"
+    loaction="lat"+","+"lng"
 
     #r=requests.get("https://maps.googleapis.com/maps/api/place/search/json?location=31.6607795,74.8214579&rankby=distance&types=police&sensor=false&key="+place_api)
-    r=request.get(base_url+location+"rankby=distance&types="+type+&sensor=false&key="+place_api)
+    r=request.get(base_url+location+"rankby=distance&types="+type+&sensor=false&key="+ place_api)
     #print r.content
     #d = ast.literal_eval(r)
 
