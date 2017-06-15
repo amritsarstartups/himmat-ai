@@ -122,7 +122,7 @@ def location_data(lat,lng,type):
         
         d= {}
         d["name"]=item["name"]
-        d["address"]=item["vicinity"]
+        d["locations"]=item["vicinity"]
         d["lat"]=item["geometry"]["location"]["lat"]
         d["lng"]=item["geometry"]["location"]["lng"]
         final_data["data"].append(d)
