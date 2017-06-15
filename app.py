@@ -90,12 +90,15 @@ if __name__ == "__main__":
 	
 	
 place_api="AIzaSyDT0P7r0ezcoeNvotC_J2AwviQnCCfj0Oo"
+base_url="https://maps.googleapis.com/maps/api/place/search/json?location="
 
 
-def location_data():
-    type="police"
+def location_data(lat,lng,type):
+    
+	loaction="lat"+","+"lng"
 
-    r=requests.get("https://maps.googleapis.com/maps/api/place/search/json?location=31.6607795,74.8214579&rankby=distance&types=police&sensor=false&key="+place_api)
+    #r=requests.get("https://maps.googleapis.com/maps/api/place/search/json?location=31.6607795,74.8214579&rankby=distance&types=police&sensor=false&key="+place_api)
+    r=request.get(base_url+location+"rankby=distance&types="+type+&sensor=false&key="+place_api)
     #print r.content
     #d = ast.literal_eval(r)
 
@@ -126,7 +129,11 @@ def location_data():
 
 @app.route('/api/sbcon/', methods=['GET'])
 def data():
-    return jsonify(location_data())
+    if len(requests.args.get("lats")) and len(requests.args.get("lngs")) and len(requests.args.get("category")):
+        lat=requests.args.get("lats")
+        lng=requests.args.get("lngs")
+        category=requests.args.get("category")
+        return jsonify(location_data(lat,lng,category))
    
 
 if __name__ == "__main__":
