@@ -99,7 +99,7 @@ def location_data(lat,lng,type):
     final_url= base_url+location + "rankby=distance&types=" + type+ "&sensor=false&key="+ place_api
 
     #r=requests.get("https://maps.googleapis.com/maps/api/place/search/json?location=31.6607795,74.8214579&rankby=distance&types=police&sensor=false&key="+place_api)
-    r=request.get(final_url)
+    r=requests.get(final_url)
     #print r.content
     #d = ast.literal_eval(r)
 
