@@ -130,10 +130,10 @@ def location_data(lat,lng,type):
 
 @app.route('/api/sbcon/', methods=['GET'])
 def data():
-    if len(requests.args.get("lats")) and len(requests.args.get("lngs")) and len(requests.args.get("category")):
-        lat=requests.args.get("lats")
-        lng=requests.args.get("lngs")
-        category=requests.args.get("category")
+    if len(request.args.get("lats")) and len(request.args.get("lngs")) and len(request.args.get("category")):
+        lat=request.args.get("lats")
+        lng=request.args.get("lngs")
+        category=request.args.get("category")
         return jsonify(location_data(lat,lng,category))
    
 
