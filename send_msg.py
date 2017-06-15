@@ -19,7 +19,7 @@ print r.text
 
 url='http://site24.way2sms.com/Login1.action?'
 
-cred={'username': "8427407305", 'password': "SAURABH123"}
+cred={'username': "8427407305", 'password': "SAURABH123"}  # Please patch direct credential access , tampering can be performed by anyone
 
 s=requests.Session()			# Session because we want to maintain the cookies
 
