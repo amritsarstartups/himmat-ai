@@ -1,5 +1,12 @@
 # himmatAI
 
+
+Product link : https://www.facebook.com/Himmat-AI-105816973321812/
+
+Send a message to interact with himmatAI
+
+
+
 himmatAI is a step towards a new, empowering and Smart Society.
 himmat AI is 24x7 at your service when you are in danger or medical emergency, get nearest authority contact details and location and share your location in one click to relatives and authorities. Explore lot more
 
