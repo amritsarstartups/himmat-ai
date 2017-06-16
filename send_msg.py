@@ -30,7 +30,7 @@ def message_sending(lat,lng,mob):      #sending text message
      
     url='http://site24.way2sms.com/Login1.action?'
 
-    cred={'username': "8427407305", 'password': "SAURABH123"}
+    cred={'username': "your_username", 'password': "pass"}
 
     s=requests.Session()			# Session because we want to maintain the cookies
 

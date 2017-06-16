@@ -5,7 +5,7 @@ from flask import Flask, request, jsonify
 import json
 
 app = Flask(__name__)
-place_api="AIzaSyDT0P7r0ezcoeNvotC_J2AwviQnCCfj0Oo"
+place_api="your_api"
 
 
 def location_data():
