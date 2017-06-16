@@ -6,24 +6,15 @@ from pygeocoder import Geocoder
 
 from flask import Flask, request, jsonify
 
-app = Flask(__name__)
+app = Flask(__name__)  #initialsig the app
 
 
 
 
-
-
-
-
-
-
-
-
-
-def message_sending(lat,lng,mob):
+def message_sending(lat,lng,mob):      #sending text message
     lat = float(lat)
     lng= float(lng)
-    results = Geocoder.reverse_geocode(lat,lng)
+    results = Geocoder.reverse_geocode(lat,lng)   #determining address using co-ordinates
     coord=  results.coordinates
 
     street = results.street_address
