@@ -1,51 +1,73 @@
-# himmat-ai
+# himmatAI
 
-himmat AI is at your service when you are in danger or medical emergency, get nearest authority contact details and location and share your location in one click to relatives and authorities. Explore lot more
+himmatAI is a step towards a new, empowering and Smart Society.
+himmat AI is 24x7 at your service when you are in danger or medical emergency, get nearest authority contact details and location and share your location in one click to relatives and authorities. Explore lot more
 
 # tools used
 
-The base of our platform is chatter on framework which supports NLU like api.ai and wit.ai and provides easy deployment avoiding struggle of deployment and integration of NLU apis with backend scripts.
-Chatter on uses apis to deal with dynamic data of any type. Following are the apis we used:
+himmatAI uses Platform as a Service. The base of our framework is chatteron platform which supports Natural Language Processing like api.ai and wit.ai and provides easy deployment avoiding struggle of deployment and integration of NLU apis with backend scripts.
+himmatAI uses apis to deal with dynamic data of any type. Following are the apis we used:
 
-``
-prepared a api from scrapped data of justdial (eg. http://twg-api.herokuapp.com/api/dial?city=ludhiana&category=police which has been deployed along with one of applications.)
+
 ``
 `` 
-used sheetsu api for converting google sheets as api
+himmatAI uses Google Places API to fetch location based data for the user.
 ``
 `` 
-other apis used are: mapmyindia api, pricetree api, pricecheckindia api, food2fork recipe api and many more.
+Other apis used are: mapmyindia api, pricetree api, pricecheckindia api, food2fork recipe api and many more.
 ``
 
-Currently we are storing data in google sheets using sheetsu api and fetching it for use by various purposes.
+himmatAI is integrated with Flask at the backend to fetch/load the data.
 
-# features of himmat-ai
+# features of himmatAI
 
 ``
-find help around user location
+Find help around users location by fetching nearest concerned authorities.
 ``
 ``
-share user location
+Share users location to loved once at the time of distress.
 ``
 ``
-connect to an NGO
+Helps connect to an NGO for help
 ``
 ``
-lodge complaint on twitter for immediate action by government authorities
+Lodge complaint on twitter for immediate action by government authorities
 ``
 ``
-get grocery. vegetable and every product home deliver
+Get grocery vegetable and every product home deliver links.
 ``
 ``
-cookery
+Cookery dishes recipes.
 ``
 ``
-best online offers on one click
+Best online offers on one click.
 ``
 ``
-women news in trend
+Women news in trend
 ``
 
-and lot more.
+``
+NLP integration hence making it user friendly and smnart.
+``
 
-We have update apis we have built.
+``
+Speech Recognition option.
+``
+
+``
+Easy deployment on various message sending appliactions like Facbook Messenger or Telegram.
+``
+
+#Some implenmatble features
+
+``
+Safer Route feature integration to determine the best safest route.
+``
+``
+Analyisng the social environment of various areas of the towns and cities.
+``
+``
+Creating a central data with Police and medical databse.
+``
+
+We have updated APIs we have built.
