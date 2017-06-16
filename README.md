@@ -1,5 +1,10 @@
 # himmatAI
 
+Team : Acsess_Denied 
+
+Team Lead : Saurabh Daalia      https://github.com/saurabhdaalia
+Team Member : Aditya Bansal     https://github.com/adityabansal123
+Team Member : Raghuvar 
 
 Product link : https://www.facebook.com/Himmat-AI-105816973321812/
 
