@@ -4,8 +4,9 @@ from pymessenger import Bot
 import requests
 import json
 
-app= Flask(__name__)
+app= Flask(__name__)    #initialisng app
 
+#ignore#
 page_access_token = "EAATZAU8XCjkcBAI12BNwPrB5RZCZC4poPsJlmTJZAHLbSqtR4GPZC6b2fG5onlNCxYZA8ysMxErMD366dKNmW4pFq6jU0zx55ZAbjvlMfm0uN0GEkbU2GrpyZABdIVlsvdDdWcjvqooYfUNA3iWw4UJb4psevtqGCsQu9lFW9tH8zwZDZD"
 bot = Bot(page_access_token)
 
@@ -89,7 +90,7 @@ if __name__ == "__main__":
 #=======================================================#	
 	
 	
-place_api="AIzaSyDT0P7r0ezcoeNvotC_J2AwviQnCCfj0Oo"
+place_api="AIzaSyDT0P7r0ezcoeNvotC_J2AwviQnCCfj0Oo"     #api privided by google(google placeapi)
 base_url="https://maps.googleapis.com/maps/api/place/search/json?location="
 
 
@@ -113,7 +114,7 @@ def location_data(lat,lng,type):
     final_data=dict()
 
     final_data["data"]=list()
-
+    #fetching required data  
 
     for item in result:
         print "Name" , item["name"]
@@ -128,9 +129,9 @@ def location_data(lat,lng,type):
         final_data["data"].append(d)
     return final_data
 
-@app.route('/api/sbcon/', methods=['GET'])
+@app.route('/api/sbcon/', methods=['GET'])     #configuring the post request to get the data
 def data():
-    if len(request.args.get("lats")) and len(request.args.get("lngs")) and len(request.args.get("category")):
+    if len(request.args.get("lats")) and len(request.args.get("lngs")) and len(request.args.get("category")):  #dynamic parameters
         lat=request.args.get("lats")
         lng=request.args.get("lngs")
         category=request.args.get("category")
