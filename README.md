@@ -8,7 +8,10 @@ Team Member : Raghuvar
 
 Product link : https://www.facebook.com/Himmat-AI-105816973321812/
 
-Send a message to interact with himmatAI
+For screenshots and description, check out the presentation.
+Presentation link : https://www.slideshare.net/SaurabhDaalia/himmatai
+
+Send a message to interact with himmatAI..
 
 
 
